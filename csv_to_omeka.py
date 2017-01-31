@@ -16,15 +16,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 
-omeka_super_user = "moodleuser" #this is your omeka super user name
-omeka_pass  = "moodleuser" #password
-site_name = 'https://ds-omeka.haverford.edu/moodleuser' #the full URL for the Omeka site
-moodle_course_id = "ID"
+omeka_super_user = "ajanco" #this is your omeka super user name
+omeka_pass  = "-rathLar1" #password
+site_name = 'https://ds-omeka.haverford.edu/atlasofthedead' #the full URL for the Omeka site
+moodle_course_id = "819"
 
 
 #https://ds-omeka.haverford.edu/literatureandart/admin/users/login
 driver = webdriver.Chrome(executable_path="/Users/ajanco/projects/chromedriver") #this is the location of Chromedriver
-login_page = site_name + "/admin/users/login"
+login_page = str(site_name) + "/admin/users/login"
 driver.get(login_page) 
 
 #enter username
@@ -73,6 +73,8 @@ with open(file_name, 'rb') as fd:
                         #press return
                         elem = driver.find_element_by_id('username')
                         elem.send_keys(Keys.RETURN)
-                        time.sleep(1)                                                 
+                        time.sleep(1)
+                        
+                        driver.get(add_user_page) 
             
     

@@ -9,14 +9,15 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
 
 # Here we set the required login information for Moodle and Omeka
-moodle_user = "USERNAME"
-moodle_pass  = "PASSWORD"
-moodle_course_id = "ID"
-omeka_super_user = "USERNAME"
-omeka_pass  = "PASSWORD"
-site_name = 'URL' #for example, site_name = 'https://ds-omeka.haverford.edu/moodleuser'
+moodle_user = "ajanco"
+moodle_pass  = "Pushkaisacat881427"
+moodle_course_id = "819"
+omeka_super_user = "ajanco"
+omeka_pass  = "-rathaLar1"
+site_name = 'https://ds-omeka.haverford.edu/atlasofthedead' #for example, site_name = 'https://ds-omeka.haverford.edu/moodleuser'
 
 
 driver = webdriver.Chrome(executable_path="/Users/ajanco/projects/chromedriver") #this is the path to chromedriver, set it for your machine
@@ -66,7 +67,7 @@ driver.quit()
 
 
 #now we go to the Omeka project and create users for each student in the csv
-login_page = site_name + "/admin/users/login"
+login_page = str(site_name) + "/admin/users/login"
 driver.get(login_page) 
 
 #enter username

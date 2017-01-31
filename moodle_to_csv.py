@@ -11,11 +11,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 
 
-moodle_user = "USERNAME" #this is your Moodle username
-moodle_pass  = "PASSWORD" #this is your Moodle password
-moodle_course_id = "ID" #this is the id that appears in the URL of your class ...php?id=691 for example
+moodle_user = "ajanco" #this is your Moodle username
+moodle_pass  = "Pushkaisacat881427" #this is your Moodle password
+moodle_course_id = "819" #this is the id that appears in the URL of your class ...php?id=691 for example
 
-driver = webdriver.Chrome(executable_path="PATH") #this is the path to cromedriver, get from https://sites.google.com/a/chromium.org/chromedriver/downloads
+driver = webdriver.Chrome(executable_path="/Users/ajanco/projects/chromedriver") #this is the path to cromedriver, get from https://sites.google.com/a/chromium.org/chromedriver/downloads
 
 driver.get("https://moodle.haverford.edu/") #change as relevant to your moodle site's URL
 
