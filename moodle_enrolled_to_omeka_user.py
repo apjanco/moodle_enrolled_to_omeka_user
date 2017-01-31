@@ -12,11 +12,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 # Here we set the required login information for Moodle and Omeka
-moodle_user = "ajanco"
-moodle_pass  = "Pushkaisacat881427"
-moodle_course_id = "819"
-omeka_super_user = "ajanco"
-omeka_pass  = "-rathaLar1"
+moodle_user = "USER"
+moodle_pass  = "PASS"
+moodle_course_id = "ID"
+omeka_super_user = "USER"
+omeka_pass  = "-PASS"
 site_name = 'https://ds-omeka.haverford.edu/atlasofthedead' #for example, site_name = 'https://ds-omeka.haverford.edu/moodleuser'
 
 
