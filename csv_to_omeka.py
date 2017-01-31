@@ -16,10 +16,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 
 
-omeka_super_user = "ajanco" #this is your omeka super user name
-omeka_pass  = "-rathLar1" #password
+omeka_super_user = "USER" #this is your omeka super user name
+omeka_pass  = "PASSWORD" #password
 site_name = 'https://ds-omeka.haverford.edu/atlasofthedead' #the full URL for the Omeka site
-moodle_course_id = "819"
+moodle_course_id = "ID"
 
 
 #https://ds-omeka.haverford.edu/literatureandart/admin/users/login
