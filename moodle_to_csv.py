@@ -14,7 +14,7 @@ from selenium.webdriver.common.by import By
 print "**Welcome to Moodle-to-CSV**"
 
 moodle_user = raw_input("Enter your Moodle username: ")
-moodle_pass  = getpass.getpass("Enter your Moodle username: ")
+moodle_pass  = getpass.getpass("Enter your Moodle password: ")
 moodle_course_id = raw_input("Enter your Moodle course id: ") #this is the id that appears in the URL of your class ...php?id=691 for example
 print "[*] Ok, I'll log in to Moodle and create a file called students%s.txt with the students' names and emails" % moodle_course_id
 
