@@ -2,7 +2,7 @@
 This is a set of scripts that grabs a list of student names and emails from Moodle, creates a csv file and then creates users from the list on an Omeka site.
 
 It's best to run the scripts on a local machince.  Clone this repo in a virtualenv and run `pip install -r requirements.txt`.<br>
-You'll also need to install Chromedriver, which can be found [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
+You'll also need to Chromedriver.  It is included in the repo, but it can also be found [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 <br>
 To find the Moodle course ID, log in to Moodle, find the course and look at the URL.  You should see something like this:<br>
 `https://moodle.haverford.edu/course/view.php?id=691`  The course ID is the number at the end - 691 in this case.  
