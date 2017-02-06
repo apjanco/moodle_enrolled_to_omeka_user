@@ -23,7 +23,7 @@ moodle_course_id = "ID"
 
 
 #https://ds-omeka.haverford.edu/literatureandart/admin/users/login
-driver = webdriver.Chrome(executable_path="/Users/ajanco/projects/chromedriver") #this is the location of Chromedriver
+driver = webdriver.Chrome(executable_path="~/moodle_enrolled_to_omeka_user/chromedriver") #this is the location of Chromedriver
 login_page = str(site_name) + "/admin/users/login"
 driver.get(login_page) 
 
@@ -45,7 +45,7 @@ add_user_page = site_name + "/admin/users/add"
 driver.get(add_user_page) 
 
 #load the csv file
-file_name = '/Users/ajanco/projects/students_%s.txt' % moodle_course_id
+file_name = '~/moodle_enrolled_to_omeka_user/students_%s.txt' % moodle_course_id
 with open(file_name, 'rb') as fd:
             reader = csv.DictReader(fd)
             
